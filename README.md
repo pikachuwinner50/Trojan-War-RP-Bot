@@ -33,3 +33,10 @@ DISCORD_GUILD_ID=your-server-id
 ```powershell
 python -m trojan_bot
 ```
+
+
+
+DISCORD SERVER:
+https://discord.gg/pxAZvFzzqZ
+
+Note: This bot belongs to Average Tech-Priest on Discord.
