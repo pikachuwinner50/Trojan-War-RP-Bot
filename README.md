@@ -12,7 +12,7 @@ This build follows the shared design doc's settlement and turn structure:
 - `/turn end` runs passive generation first, then processes queued construction.
 - Pending resources are reserved so players cannot double-spend them during a turn.
 
-## Setup
+## How to Launch
 
 1. Install Python 3.11 or newer.
 2. Install dependencies:
@@ -33,39 +33,3 @@ DISCORD_GUILD_ID=your-server-id
 ```powershell
 python -m trojan_bot
 ```
-
-## Commands
-
-Player setup:
-
-- `/nation claim culture:Achaeans nation:Sparta`
-- `/nation mine`
-- `/nation list`
-
-Settlement:
-
-- `/settlement view`
-- `/settlement view nation:Sparta`
-- `/settlement buildings`
-
-`/settlement view` opens a button UI with Overview, Settlements, Military, Resources, and Religion pages. Nations currently begin with one settlement: their capital.
-
-The Military page shows recruitment buildings and unlocked unit types. The Religion page shows Cult Center status, favor capacity, Olympian preferred offerings, blessings, and Hubris modifiers.
-
-Building queue:
-
-- `/build queue building:farms`
-- `/build queue building:citadel`
-- `/turn queue`
-
-GM turn resolution:
-
-- `/turn end`
-
-Moderator tools:
-
-- `/admin reset_claims`
-- `/admin unclaim nation:Sparta`
-- `/admin missing_capitals`
-
-Moderator-only commands require Manage Server, Manage Messages, or Administrator.
